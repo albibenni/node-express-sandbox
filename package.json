@@ -2,16 +2,13 @@
   "name": "node-express-sandbox",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "alberto benatti",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start": "nodemon dist/app.js",
+    "ts": "tsc --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -39,6 +36,7 @@
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "4.2.0",
+    "nodemon": "^2.0.22",
     "typescript": "^5.1.6"
   },
   "jest": {
